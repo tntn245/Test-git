@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+#container_main{
+    padding: 20px;
+    background-color: #B0C4DE;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    position: relative;
+}
+#box1{
+    margin-right: 0;
+}
+#input_dialog, #dialogs_list, #input_sentences{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #6c757d;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#box_form_dialog{
+    position: relative;
+}
+#show_dialog_btn{
+    position: absolute;
+    right: 12px;
+    border: none;
+    background-color: #fff0;
+    line-height: 200%;
+    height: 100%;
+    width: 7%;
+
+    border-left: 1px inset;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    background-color: rgb(0 0 0 / 6%);
+
+    display: none;
+}
+
+.label_content{
+    padding: 8px 0;
+}
+
+#sentences{
+    margin-bottom: 3%;
+}
+#box_btn{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align-last:end;
+    margin-top: 1rem;
+}
+#box_list{
+    width: 70%;
+}
+.btn_list{
+    padding: 10px;
+    margin-left: 12px ;
+    width: 25%;
+    height: 50px;
+    text-align-last:center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.player_name{
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btn_del{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:transparent; 
+    border-color:transparent;
+    text-align: center;
+}
+
+.table{
+    background-color: #fff;
+    box-shadow: inset rgb(0 0 0 / 24%) -1px 45px 17px;
+}
+
+.table_row:hover,.player_name:hover{
+    background-color: #96cbf7;
+}
+.player_name:active,
+.active, .active1, .active2{
+    background-color: #0078D7;
+}
+.disable_active{
+    color: #7f7f7f;
+}
+.disable_active:hover{
+    background-color: inherit !important;
+}
+.btn_input, #btn_add{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn_input:hover, .btn_input:active{
+    background-color: #ddd;
+}
+
+
+#dialogs_list{
+    border-radius: 0.375rem;
+}
+.containers{
+    padding: 10px;
+}
+#show_db{
+    background-color: #fff;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #6c757d;
+}
+#box_player{
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #6c757d;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#player{
+    height: 100%;
+}
+
+#sending_position, #sending_all_position{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#box_sending{
+    width: 80%;
+    height: 30%;
+    background-color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+#header_sending{
+    height: 40%;    
+    background-color: lightskyblue;
+    background-color: mediumturquoise;
+    background-color: #7FBCD2;
+}
+#send_seen{
+    height: 60%;
+    display: grid;
+}
+.sending{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#send_alert, #seen_alert{
+    align-self: center;
+}
+.alert{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#close_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 !important;
+    border: none !important;
+    color: #000 !important;
+    font-size: larger;
+}
+#close_btn:hover{
+    color: #fff !important;
+}
+#sending_loader{
+    text-align: center;   
+}
+#all_dialog{
+    width: 100px;
+    height: 100px;
+    background-color: #6c757d;
+}
+#box_sending_all{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: clip;
+}
+#header_sending_all{
+    width: 80%;
+    height: 10%;
+    background-color: #7FBCD2;
+    position: relative;
+}
+#content_sending_all{
+    width: 80%;
+    height: fit-content;
+    background-color: #fff;
+}
+#send_seen_all{
+    height: 60%;
+}
+#all_sentences{
+    text-align: center;
+    background-color: lightcyan;
+    margin: 1%;
+    border-radius: 0.375rem;
+    border: 1px solid lightblue;
+}
+.spinner_alert{
+    margin-bottom: 1%;
+}
