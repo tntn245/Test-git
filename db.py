@@ -9,3 +9,4 @@ Users = db.Users
 DialogContentNotification = db.DialogContentNotification
 dialog_find = list(Dialog.find().sort("ModifiedDate", -1).limit(1))
 show_Dialog = dialog_find[0]['_id']
+#lvu luv
